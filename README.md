@@ -1,24 +1,28 @@
-# ESP8266 FreeRTOS Development Environment
+# ESP8266 FreeRTOS Projects
 
-Docker-based ESP8266 FreeRTOS SDK development environment for Ubuntu.
+![ESP8266](https://img.shields.io/badge/ESP8266-FreeRTOS-blue)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Ubuntu-E95420?logo=ubuntu&logoColor=white)
 
-## Directory Structure
-esp8266/
-├── scripts/                    # Shared utility scripts
-│   ├── extract_sdk.sh         # Extract SDK headers for IntelliSense
-│   └── new_project.sh         # Create new project from template
-├── _project_template/         # Template for new projects
-├── .sdk_headers/              # Extracted SDK headers (not in git)
-└── [your_projects]/           # Your ESP8266 projects
+A collection of ESP8266 projects using FreeRTOS SDK with a Docker-based development environment.
 
-## Initial Setup
+## Overview
 
-### 1. Install Docker
+This repository contains multiple ESP8266 embedded systems projects, along with a complete development environment setup using Docker. Each project demonstrates different aspects of ESP8266 programming with FreeRTOS.
 
-Follow instructions at: https://docs.docker.com/engine/install/ubuntu/
+## 🚀 Projects
 
-### 2. Build Docker Image
-```bash
-git clone https://github.com/brinth/ESP8266_RTOS_SDK_Docker.git
-cd ESP8266_RTOS_SDK_Docker
-docker build -t esp8266-rtos .
+- **[hello_world](./hello_world/)** - Basic FreeRTOS application with chip info display
+- **[blink_led](./blink_led/)** - GPIO control and timing *(coming soon)*
+- **[wifi_station](./wifi_station/)** - WiFi connectivity example *(coming soon)*
+
+## 🛠️ Development Environment
+
+- **Docker-based**: Consistent build environment across machines
+- **VSCode integrated**: IntelliSense, tasks, and debugging setup
+- **FreeRTOS SDK**: Full ESP8266 RTOS SDK support
+- **Helper scripts**: Easy build, flash, and monitor workflows
+
+## 📋 Quick Start
+
+[... rest of your README ...]
