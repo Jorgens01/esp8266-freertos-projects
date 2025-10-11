@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "ESP8266",
+            "includePath": [
+                "${workspaceFolder}/build/include",
+                "${workspaceFolder}/../.sdk_headers/components/**"
+            ],
+            "defines": [
+                "ESP_PLATFORM",
+                "ESP8266",
+                "__XTENSA__",
+                "IDF_VER=\"v3.4\"",
+                "FREERTOS",
+                "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\"",
+                "portTICK_PERIOD_MS=((TickType_t)1000/configTICK_RATE_HZ)"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

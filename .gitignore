@@ -1,0 +1,14 @@
+# Extracted SDK headers (don't commit, regenerate with extract_sdk.sh)
+.sdk_headers/
+
+# Docker build directory (only if you build locally)
+ESP8266_RTOS_SDK_Docker/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
