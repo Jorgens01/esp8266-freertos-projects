@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.c": "c"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": false
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}

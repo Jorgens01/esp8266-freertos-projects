@@ -1,14 +1,36 @@
-# Extracted SDK headers (don't commit, regenerate with extract_sdk.sh)
+# Extracted SDK headers (regenerate with extract_sdk.sh)
 .sdk_headers/
 
-# Docker build directory (only if you build locally)
+# Docker repo (clone separately)
 ESP8266_RTOS_SDK_Docker/
+
+# Build artifacts (in all project directories)
+*/build/
+*/sdkconfig
+*/sdkconfig.old
+
+# IDE files (in all project directories)
+*/.vscode/.browse.c_cpp.db*
+*/.vscode/ipch/
+
+# Compiled files
+**/*.o
+**/*.a
+**/*.elf
+**/*.bin
+**/*.map
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# Temporary files
-*.tmp
 *.swp
 *~
+
+# Python
+__pycache__/
+*.pyc
+
+# Template is kept, but don't track its build artifacts
+_project_template/build/
+_project_template/sdkconfig
+
