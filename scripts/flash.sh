@@ -1,9 +1,11 @@
 #!/bin/bash
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
-# Change this to your actual device
+PROJECT_DIR="${1:-.}"
+PROJECT_DIR="$(cd "$PROJECT_DIR" && pwd)"
 DEVICE="${ESP8266_DEVICE:-/dev/ttyUSB0}"
+
+echo "Flashing project: $PROJECT_DIR"
+echo "Device: $DEVICE"
 
 docker run -it --rm \
     --privileged \

@@ -4,7 +4,10 @@
         {
             "label": "ESP8266: Build",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/build.sh",
+            "command": "${workspaceFolder}/../scripts/build.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -18,13 +21,19 @@
         {
             "label": "ESP8266: Clean",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/clean.sh",
+            "command": "${workspaceFolder}/../scripts/clean.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "problemMatcher": []
         },
         {
             "label": "ESP8266: Flash",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/flash.sh",
+            "command": "${workspaceFolder}/../scripts/flash.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -34,7 +43,10 @@
         {
             "label": "ESP8266: Monitor",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/monitor.sh",
+            "command": "${workspaceFolder}/../scripts/monitor.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -45,7 +57,10 @@
         {
             "label": "ESP8266: Flash and Monitor",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/flash_monitor.sh",
+            "command": "${workspaceFolder}/../scripts/flash_monitor.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
@@ -56,20 +71,14 @@
         {
             "label": "ESP8266: Menuconfig",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/menuconfig.sh",
+            "command": "${workspaceFolder}/../scripts/menuconfig.sh",
+            "args": [
+                "${workspaceFolder}"
+            ],
             "presentation": {
                 "reveal": "always",
                 "panel": "new"
             },
-            "problemMatcher": []
-        },
-        {
-            "label": "ESP8266: Build + Flash + Monitor",
-            "dependsOrder": "sequence",
-            "dependsOn": [
-                "ESP8266: Build",
-                "ESP8266: Flash and Monitor"
-            ],
             "problemMatcher": []
         }
     ]
