@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.cpp": "arm",
+        "*.h": "c",
+        "*.c": "c",
+        "random": "c"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": false
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}
