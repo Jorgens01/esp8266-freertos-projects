@@ -3,8 +3,8 @@
         {
             "name": "ESP8266",
             "includePath": [
-                "${workspaceFolder}/build/include",
-                "${workspaceFolder}/../.sdk_headers/components/**"
+                "${workspaceFolder}/../.sdk_headers/components/**",
+                "${workspaceFolder}/build/include"
             ],
             "defines": [
                 "ESP_PLATFORM",
