@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.cpp": "arm",
+        "*.h": "c",
+        "*.c": "c",
+        "chrono": "c",
+        "atomic": "c",
+        "condition_variable": "c",
+        "future": "c",
+        "*.inc": "c"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/build": false
+    },
+    "search.exclude": {
+        "**/build": true
+    }
+}
