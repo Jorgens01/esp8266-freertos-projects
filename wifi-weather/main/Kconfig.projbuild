@@ -1,0 +1,27 @@
+menu "Project Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "MySSID"
+        help
+            SSID of your WiFi network.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "MyPassword"
+        help
+            Password for your WiFi network.
+
+    config WEATHER_API_KEY
+        string "OpenWeatherMap API Key"
+        default ""
+        help
+            Your API key from openweathermap.org.
+
+    config WEATHER_CITY
+        string "City Name"
+        default ""
+        help
+            The city to get weather for.
+
+endmenu
